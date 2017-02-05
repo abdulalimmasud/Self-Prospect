@@ -1,0 +1,33 @@
+private void SaveImage(HttpPostedFile postedFile, string customerId, int id)
+    {
+        var path = Server.MapPath("~/images/RequestedProductImage/" + customerId + "/");
+        var file = "";
+        if (imageUpload.HasFile)
+        {
+            var directory = new DirectoryInfo(path);
+            if (!directory.Exists)
+            {
+                directory.Create();
+            }
+            FileInfo fileOrigin = new FileInfo(imageUpload.PostedFile.FileName);
+            file = Path.Combine(path, id + fileOrigin.Extension);
+            postedFile.SaveAs(file);
+        }
+    }
+
+    private void SaveImages(string path, HttpPostedFileBase postedFile)
+    {
+        var paths = path;
+        var file = "";
+        if (postedFile.ContentLength>0)
+        {
+            var directory = new DirectoryInfo(paths);
+            if (!directory.Exists)
+            {
+                directory.Create();
+            }
+            FileInfo fileOrigin = new FileInfo(postedFile.FileName);
+            file = Path.Combine(paths, postedFile.FileName);
+            postedFile.SaveAs(file);
+        }
+    }
