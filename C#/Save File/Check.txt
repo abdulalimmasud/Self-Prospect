@@ -1,0 +1,35 @@
+function readURL(input) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#upload_image").show();
+                    $('#uploadedImage').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+            $('#imageUpload').change(function () {
+                var fileExtension = ['jpeg', 'jpg', 'png', 'gif', 'bmp'];
+                if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+                    alert("Only formats are allowed : " + fileExtension.join(', '));
+                    $(this).val('');
+                    $("#uploadedImage").attr('src', '');
+                } else {
+                    readURL(this);
+                }
+            });
+            $('#productLink').keyup(function () {
+                var url = $('#productLink').val();
+                var url_validate = /^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/;
+                if (!url_validate.test(url)) {
+                    $('#productLink').css('color', 'red');
+                } else {
+                    $('#productLink').css('color', 'green');
+                }
+            });
+            $('#productPrice').keyup(function () {
+                var values = this.value;
+                if (!$.isNumeric(values)) {
+                    $(this).css('color', 'red');
+                } else {
+                    $(this).css('color', 'black');
+                }
+            });

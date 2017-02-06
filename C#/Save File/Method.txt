@@ -1,0 +1,25 @@
+private RequestProduct GetRequest(int userId)
+    {
+        RequestProduct requestProduct = new RequestProduct();
+        if (imageUpload.HasFile)
+        {
+            FileInfo fileOrigin = new FileInfo(imageUpload.PostedFile.FileName);
+            requestProduct.Image = fileOrigin.Extension;
+        }
+        else
+        {
+            requestProduct.Image = "";
+        }
+        requestProduct.Name = productName.Text;
+        requestProduct.Link = productLink.Text;
+        requestProduct.Description = productDescription.Text;
+        if (productPrice.Text != string.Empty)
+        {
+            double result = 0;
+            if (double.TryParse(productPrice.Text, out result)) { }
+            requestProduct.Price = result;
+        }
+        requestProduct.ExpectedDate = requiredDate.Text;
+        requestProduct.CustomerId = userId;
+        return requestProduct;
+    }
