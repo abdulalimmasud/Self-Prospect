@@ -1,0 +1,38 @@
+[HttpPost]
+public ActionResult Upload(HttpPostedFileBase fileData)
+{
+    if (fileData != null && fileData.ContentLength > 0)
+    {
+        string extension = Path.GetExtension(fileData.FileName);
+
+        string renamedImage = null;
+        do
+        {
+            renamedImage = Server.MapPath("~/Content/Images/Categories/cat" + System.Guid.NewGuid().ToString("N") + extension);
+
+        } while( /*verify that renamedImage file does not exist*/ );
+
+        fileData.SaveAs(renamedImage);
+        return Json(Path.GetFileName(renamedImage));
+    }
+    return Json(false);
+}
+
+
+---------------------------
+
+add System.IO namespace.
+
+Renaming a File in C#
+
+  string path = Server.MapPath("~");
+  string Fromfile = path + "\\[Foldername] \\" +[Filename];
+  string Tofile = path + "\\[Foldername]\\" +[Filename];
+      File.Move(Fromfile, Tofile);
+
+Renaming a Folder in C#
+
+        string path = Server.MapPath("~") ;
+        string Fromfol = "\\[Foldername] \\";
+        string Tofol = "\\[Foldername] \\";
+        Directory.Move(path + Fromfol , path + Tofol);
