@@ -1,0 +1,33 @@
+﻿body{
+background:url("https://1.bp.blogspot.com/-QdtWby1gE2M/WIIfAKwWaoI/AAAAAAAABbI/W3IKzqJQ4ysz8Zs9gNu-ilHBhQ_GAAEbACLcB/s1600/bg.jpg") no-repeat;
+background-size:cover;
+}
+body::before{
+background-color: rgba(0, 0, 0, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index:-1;
+}
+.middle{
+width:445px;
+height:395px;
+background-color: rgba(0, 0, 0, 0.5);
+margin-top:125px;
+margin-left:325px;
+border-radius:12px;
+padding:56px;
+}
+#password{
+padding-right:29px;
+}
+#eye{
+font-size:125%;
+cursor:pointer;
+postion:absolute;
+float:right;
+margin-top:-31px;
+margin-right:12px;
+}
