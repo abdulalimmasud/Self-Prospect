@@ -1,0 +1,4 @@
+<customErrors mode="Off" defaultRedirect="ServerNotResponding.html">
+      <error statusCode="403" redirect="NoAccess.html" />
+      <error statusCode="404" redirect="FileNotFound.html" />
+</customErrors>

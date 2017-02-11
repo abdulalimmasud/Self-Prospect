@@ -1,0 +1,7 @@
+http://www.advancesharp.com/blog/1130/image-gallery-in-asp-net-mvc-with-multiple-file-and-size
+http://www.c-sharpcorner.com/UploadFile/20abe2/Asp-Net-mvc-4-project-on-photo-gallery-of-user/
+http://www.c-sharpcorner.com/UploadFile/b696c4/creating-image-gallery-in-mvc-5-application631/
+http://cpratt.co/file-uploads-in-asp-net-mvc-with-view-models/
+
+
+https://www.youtube.com/watch?v=oHKKZ6erEFY
