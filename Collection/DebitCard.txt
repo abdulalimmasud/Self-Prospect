@@ -1,0 +1,7 @@
+https://www.google.com.bd/url?sa=t&rct=j&q=&esrc=s&source=web&cd=10&cad=rja&uact=8&ved=0ahUKEwij2vilhpvQAhVKMI8KHTZzCb4QtwIIUzAJ&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEcyE8Td4cs0&usg=AFQjCNGzgz0acI5Mkr8iAEcNvGDZQ9jbfw&bvm=bv.138169073,d.c2I
+http://www.west-wind.com/presentations/aspnetecommerce/aspnetecommerce.asp
+https://www.youtube.com/watch?v=EcyE8Td4cs0
+http://venkatbaggu.com/implementing-paypal-credit-card-processing-asp-net-mvc/
+http://www.c-sharpcorner.com/blogs/credit-card-payment-in-asp-net-using-stripecom1
+
+https://channel9.msdn.com/Series/aspnetmonsters/Episode-28-Integrated-Payments-with-Stripe-in-ASPNET-Core-MVC
