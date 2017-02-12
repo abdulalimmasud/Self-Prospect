@@ -1,0 +1,40 @@
+DateTime d1 = DateTime.Now;
+DateTime d2 = DateTime.Now.AddDays(-1);
+
+TimeSpan t = d1 - d2;
+double numberOfDays = t.TotalDays;
+
+-------------------------------------
+DateTime d1;
+DateTime d2;
+return (d1 - d2).TotalDays;
+
+-------------------------------------
+
+DateTime xmas = new DateTime(2009, 12, 25);
+double daysUntilChristmas = xmas.Subtract(DateTime.Today).TotalDays;
+
+-------------------------------------
+(EndDate.Date - StartDate.Date).Days
+
+-------------------------------------
+public void date()
+{
+  Datetime startdate;
+  Datetime enddate;
+  Timespan remaindate;
+
+    startdate = DateTime.Parse(txtstartdate.Text).Date;
+    enddate= DateTime.Parse(txtenddate.Text).Date;
+
+    remaindate= enddate - startdate;
+
+    if (remaindate != null)
+    {
+        lblmsg.Text = "you have left with " + remaindate.TotalDays + "days.";
+    }
+    else
+    {
+        lblmsg.Text = "correct your code again.";
+    }
+}

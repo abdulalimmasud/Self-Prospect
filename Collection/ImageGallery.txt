@@ -5,3 +5,13 @@ http://cpratt.co/file-uploads-in-asp-net-mvc-with-view-models/
 
 
 https://www.youtube.com/watch?v=oHKKZ6erEFY
+
+
+Design
+
+http://bootsnipp.com/user/snippets/2oqW0
+http://bootsnipp.com/snippets/vORvb
+
+
+Grid
+http://bootsnipp.com/user/snippets/M028W
