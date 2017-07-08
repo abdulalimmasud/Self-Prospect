@@ -1,0 +1,9 @@
+http://1stwebdesigner.com/css-effects/
+https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+http://css3.bradshawenterprises.com/cfimg/
+http://css3.bradshawenterprises.com/flip/
+https://cssanimation.rocks/clocks/
+http://www.jquery-az.com/31-animated-bootstrap-popovers-and-modal-live-demos-by-velocity-js/
+https://robots.thoughtbot.com/css-animation-for-beginners
+http://learn.shayhowe.com/advanced-html-css/transitions-animations/
+http://www.jquery-az.com/a-jquery-menu-for-bootstrap-with-vertical-animate-and-hover-demos/
