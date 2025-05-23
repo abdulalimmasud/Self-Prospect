@@ -1,0 +1,14 @@
+SELECT 'INSERT INTO ['+p.table_id+'] VALUES ('''+
+	(STUFF
+		((SELECT '('''+
+			CASE
+				WHEN field_abbr IS NULL THEN ''
+				ELSE field_abbr END	
+		+''','''+
+		CASE
+				WHEN field_description IS NULL THEN ''
+				ELSE field_description END		
+		+''','+CONVERT(VARCHAR(20),field_value)+'),' FROM [FIELDS] WHERE table_id = p.table_id FOR XML PATH (''))
+		, 1, 2, ''))
+FROM [FIELDS] p
+GROUP BY p.table_id
